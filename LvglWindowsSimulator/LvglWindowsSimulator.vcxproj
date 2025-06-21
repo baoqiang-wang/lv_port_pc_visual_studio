@@ -629,6 +629,23 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\win\lv_win.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\src\widgets\win\lv_win_private.h" />
     <ClInclude Include="lv_conf.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="test\home\home.h" />
+    <ClInclude Include="test\icons\ui_icons.h" />
+    <ClInclude Include="test\idle\idle_page.h" />
+    <ClInclude Include="test\settings\advanced_settings\advanced_settings.h" />
+    <ClInclude Include="test\settings\advanced_settings\config_item.h" />
+    <ClInclude Include="test\settings\machine_info\machine_info.h" />
+    <ClInclude Include="test\settings\main_settings\settings.h" />
+    <ClInclude Include="test\settings\network_settings\network_settings.h" />
+    <ClInclude Include="test\settings\network_settings\rs485_settings.h" />
+    <ClInclude Include="test\settings\network_settings\wifi_settings.h" />
+    <ClInclude Include="test\settings\scenario_settings\scenario_settings.h" />
+    <ClInclude Include="test\settings\settings_cfg.h" />
+    <ClInclude Include="test\settings\time_settings\time_settings.h" />
+    <ClInclude Include="test\ui_app.h" />
+    <ClInclude Include="test\ui_manager\page_manager.h" />
+    <ClInclude Include="test\ui_manager\ui_common.h" />
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindowsSimulator.manifest" />
@@ -3619,6 +3636,48 @@
       <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <ClCompile Include="LvglWindowsSimulator.cpp" />
+    <ClCompile Include="test\home\home.c" />
+    <ClCompile Include="test\home\home_cfg.c" />
+    <ClCompile Include="test\icons\about_icon.c" />
+    <ClCompile Include="test\icons\comfort_icon.c" />
+    <ClCompile Include="test\icons\cool_icon.c" />
+    <ClCompile Include="test\icons\decrease_icon.c" />
+    <ClCompile Include="test\icons\display_icon.c" />
+    <ClCompile Include="test\icons\eco_mode_icon.c" />
+    <ClCompile Include="test\icons\fan_auto_icon.c" />
+    <ClCompile Include="test\icons\fan_high_icon.c" />
+    <ClCompile Include="test\icons\fan_low_icon.c" />
+    <ClCompile Include="test\icons\fan_mid_icon.c" />
+    <ClCompile Include="test\icons\heat_icon.c" />
+    <ClCompile Include="test\icons\increase_icon.c" />
+    <ClCompile Include="test\icons\is_latest_version_icon.c" />
+    <ClCompile Include="test\icons\network_icon.c" />
+    <ClCompile Include="test\icons\non_latest_version_icon.c" />
+    <ClCompile Include="test\icons\power_icon.c" />
+    <ClCompile Include="test\icons\rs485_icon.c" />
+    <ClCompile Include="test\icons\scenario_icon.c" />
+    <ClCompile Include="test\icons\server_icon.c" />
+    <ClCompile Include="test\icons\settings_icon.c" />
+    <ClCompile Include="test\icons\time_icon.c" />
+    <ClCompile Include="test\icons\ventilation_icon.c" />
+    <ClCompile Include="test\icons\wifi_connected_icon.c" />
+    <ClCompile Include="test\icons\wifi_disconnect_icon.c" />
+    <ClCompile Include="test\icons\wifi_set_icon.c" />
+    <ClCompile Include="test\idle\idle_cfg.c" />
+    <ClCompile Include="test\idle\idle_page.c" />
+    <ClCompile Include="test\settings\advanced_settings\advanced_settings.c" />
+    <ClCompile Include="test\settings\machine_info\machine_info.c" />
+    <ClCompile Include="test\settings\main_settings\settings.c" />
+    <ClCompile Include="test\settings\network_settings\network_settings.c" />
+    <ClCompile Include="test\settings\network_settings\rs485_settings.c" />
+    <ClCompile Include="test\settings\network_settings\wifi_settings.c" />
+    <ClCompile Include="test\settings\scenario_settings\scenario_settings.c" />
+    <ClCompile Include="test\settings\settings_cfg.c" />
+    <ClCompile Include="test\settings\time_settings\time_settings.c" />
+    <ClCompile Include="test\ui_app.c" />
+    <ClCompile Include="test\ui_manager\lv_font_CN_Bold_2.c" />
+    <ClCompile Include="test\ui_manager\page_manager.c" />
+    <ClCompile Include="test\ui_manager\ui_common.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\freetype\.clang-format" />
@@ -6784,6 +6843,9 @@
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\zephyr\Kconfig" />
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\zephyr\module.yml" />
     <None Include="freetype.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LvglWindowsSimulator.rc" />
   </ItemGroup>
   <Import Sdk="Mile.Project.Configurations" Version="1.0.1622" Project="Mile.Project.Cpp.targets" />
 </Project>

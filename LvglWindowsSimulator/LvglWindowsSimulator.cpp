@@ -5,6 +5,7 @@
 #include "lvgl/lvgl.h"
 #include "lvgl/examples/lv_examples.h"
 #include "lvgl/demos/lv_demos.h"
+#include "./test/ui_app.h"
 
 int main()
 {
@@ -26,7 +27,7 @@ int main()
     bool simulator_mode = true;
     lv_display_t* display = lv_windows_create_display(
         L"LVGL Windows Simulator Display 1",
-        800,
+        480,
         480,
         zoom_level,
         allow_dpi_override,
@@ -77,8 +78,9 @@ int main()
         return -1;
     }
 
-    lv_demo_widgets();
+    //lv_demo_widgets();
     //lv_demo_benchmark();
+    ui_commponent_cfg();
 
     while (1)
     {

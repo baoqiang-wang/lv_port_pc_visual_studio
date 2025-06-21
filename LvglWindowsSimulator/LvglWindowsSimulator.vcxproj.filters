@@ -1769,6 +1769,55 @@
       <Filter>lvgl\src\widgets\win</Filter>
     </ClInclude>
     <ClInclude Include="lv_conf.h" />
+    <ClInclude Include="test\ui_app.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="test\idle\idle_page.h">
+      <Filter>test\idle</Filter>
+    </ClInclude>
+    <ClInclude Include="test\home\home.h">
+      <Filter>test\home</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="test\settings\settings_cfg.h">
+      <Filter>test\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="test\settings\advanced_settings\advanced_settings.h">
+      <Filter>test\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="test\settings\advanced_settings\config_item.h">
+      <Filter>test\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="test\settings\machine_info\machine_info.h">
+      <Filter>test\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="test\settings\main_settings\settings.h">
+      <Filter>test\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="test\settings\network_settings\network_settings.h">
+      <Filter>test\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="test\settings\network_settings\rs485_settings.h">
+      <Filter>test\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="test\settings\network_settings\wifi_settings.h">
+      <Filter>test\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="test\settings\scenario_settings\scenario_settings.h">
+      <Filter>test\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="test\settings\time_settings\time_settings.h">
+      <Filter>test\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="test\icons\ui_icons.h">
+      <Filter>test\icons</Filter>
+    </ClInclude>
+    <ClInclude Include="test\ui_manager\page_manager.h">
+      <Filter>test\ui_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="test\ui_manager\ui_common.h">
+      <Filter>test\ui_manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindowsSimulator.manifest" />
@@ -4013,6 +4062,132 @@
       <Filter>lvgl\src\widgets\win</Filter>
     </ClCompile>
     <ClCompile Include="LvglWindowsSimulator.cpp" />
+    <ClCompile Include="test\ui_app.c">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="test\idle\idle_cfg.c">
+      <Filter>test\idle</Filter>
+    </ClCompile>
+    <ClCompile Include="test\idle\idle_page.c">
+      <Filter>test\idle</Filter>
+    </ClCompile>
+    <ClCompile Include="test\home\home.c">
+      <Filter>test\home</Filter>
+    </ClCompile>
+    <ClCompile Include="test\home\home_cfg.c">
+      <Filter>test\home</Filter>
+    </ClCompile>
+    <ClCompile Include="test\settings\settings_cfg.c">
+      <Filter>test\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="test\settings\advanced_settings\advanced_settings.c">
+      <Filter>test\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="test\settings\machine_info\machine_info.c">
+      <Filter>test\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="test\settings\main_settings\settings.c">
+      <Filter>test\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="test\settings\network_settings\network_settings.c">
+      <Filter>test\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="test\settings\network_settings\rs485_settings.c">
+      <Filter>test\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="test\settings\network_settings\wifi_settings.c">
+      <Filter>test\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="test\settings\scenario_settings\scenario_settings.c">
+      <Filter>test\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="test\settings\time_settings\time_settings.c">
+      <Filter>test\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\about_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\comfort_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\cool_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\decrease_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\display_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\eco_mode_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\fan_auto_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\fan_high_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\fan_low_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\fan_mid_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\heat_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\increase_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\is_latest_version_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\network_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\non_latest_version_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\power_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\rs485_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\scenario_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\server_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\settings_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\time_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\ventilation_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\wifi_connected_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\wifi_disconnect_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\icons\wifi_set_icon.c">
+      <Filter>test\icons</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ui_manager\lv_font_CN_Bold_2.c">
+      <Filter>test\ui_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ui_manager\page_manager.c">
+      <Filter>test\ui_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ui_manager\ui_common.c">
+      <Filter>test\ui_manager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="freetype">
@@ -5364,6 +5539,24 @@
     </Filter>
     <Filter Include="lvgl\zephyr">
       <UniqueIdentifier>{e2b5f460-68ee-4ae1-b143-7367524c0b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{d44c0f65-9856-4f19-baa8-f334bcd7a85a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\ui_manager">
+      <UniqueIdentifier>{a88227cf-4134-4b5a-8962-f3b27cf6380a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\home">
+      <UniqueIdentifier>{e0a155a1-0496-41ae-8a35-402177babc59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\idle">
+      <UniqueIdentifier>{6f93acf2-d1d3-4cc2-b927-518620bd24c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\settings">
+      <UniqueIdentifier>{62bc88a3-743a-410e-b857-14eb734c4b84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test\icons">
+      <UniqueIdentifier>{de89cdb7-0df7-4679-a698-bc2337062711}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -14853,5 +15046,9 @@
     <None Include="$(MSBuildThisFileDirectory)..\LvglPlatform\lvgl\zephyr\module.yml">
       <Filter>lvgl\zephyr</Filter>
     </None>
+    <None Include="freetype.props" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LvglWindowsSimulator.rc" />
   </ItemGroup>
 </Project>
