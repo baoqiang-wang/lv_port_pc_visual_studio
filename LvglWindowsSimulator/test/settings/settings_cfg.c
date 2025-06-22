@@ -16,6 +16,7 @@ rs485_settings_t *rs485_settings;
 wifi_settings_t *wifi_settings;
 machine_info_t *machine_info;
 time_settings_t *time_settings;
+scenario_settings_t* scenario_settings;
 
 static settings_t settings_page_ins;
 static advanced_settings_t advanced_settings_page_ins;
@@ -24,6 +25,7 @@ static rs485_settings_t rs485_settings_ins;
 static wifi_settings_t wifi_settings_ins;
 static machine_info_t machine_info_ins;
 static time_settings_t time_settings_ins;
+static scenario_settings_t* scenario_settings_ins;
 
 void advanced_settings_btn_event_handler(lv_event_t *e)
 {
@@ -95,7 +97,7 @@ static void settings_page_internal_cb_register(void)
     // ui_common_event_cb_by_index_register(settings->callback_obj, SETTINGS_PAGE_BTN_DISPLAY_ENTER, settings_to_display_page, display_settings);
     ui_common_event_cb_by_index_register(settings->callback_obj, SETTINGS_PAGE_BTN_TIME_ENTER, settings_to_time_page, time_settings);
     ui_common_event_cb_by_index_register(settings->callback_obj, SETTINGS_PAGE_BTN_ADVANCED_ENTER, settings_to_advanced_page, advanced_settings);
-    // ui_common_event_cb_by_index_register(settings->callback_obj, SETTINGS_PAGE_BTN_SCENARIO_MODE_ENTER, settings_to_scenario_page, scenario_mode_settings);
+    ui_common_event_cb_by_index_register(settings->callback_obj, SETTINGS_PAGE_BTN_SCENARIO_MODE_ENTER, settings_to_scenario_page, scenario_settings);
     ui_common_event_cb_by_index_register(settings->callback_obj, SETTINGS_PAGE_BTN_MACHINE_INFO_ENTER, settings_to_machine_page, machine_info);
 }
 
@@ -147,6 +149,8 @@ void settings_cfg(void)
     machine_info = &machine_info_ins;
     time_settings_init(&time_settings_ins);
     time_settings = &time_settings_ins;
+    scenario_settings_init(&scenario_settings_ins);
+    scenario_settings = &scenario_settings_ins;
 
     internal_cb_register();
 }
