@@ -1818,6 +1818,9 @@
     <ClInclude Include="test\ui_manager\ui_common.h">
       <Filter>test\ui_manager</Filter>
     </ClInclude>
+    <ClInclude Include="test\settings\display_settings\display_settings.h">
+      <Filter>test\settings</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Manifest Include="LvglWindowsSimulator.manifest" />
@@ -4186,6 +4189,12 @@
       <Filter>test\ui_manager</Filter>
     </ClCompile>
     <ClCompile Include="test\ui_manager\ui_common.c">
+      <Filter>test\ui_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="test\settings\display_settings\display_settings.c">
+      <Filter>test\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ui_manager\lv_font_CN_HeiTi_Google_2.c">
       <Filter>test\ui_manager</Filter>
     </ClCompile>
   </ItemGroup>
